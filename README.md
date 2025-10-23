@@ -119,8 +119,6 @@ import Logo from '@/components/ui/Logo';
 <Logo variant="icon" />     // Icon only
 ```
 
-See full documentation at [public/LOGOS.md](./public/LOGOS.md)
-
 ## 📄 Implemented Pages
 
 - 🏠 `/` - Homepage with all sections
@@ -176,17 +174,10 @@ Colors are defined in `tailwind.config.ts` and `app/globals.css`:
 --primary-light: #A78BFA;  /* Light violet */
 ```
 
-See full color palette at [COLORES.md](./COLORES.md)
 
 ### Translations
 
 Edit `messages/es.json` and `messages/en.json` to change texts.
-
-## 📚 Additional Documentation
-
-- **[INSTRUCCIONES.md](./INSTRUCCIONES.md)** - Detailed usage guide (Spanish)
-- **[LOGOS.md](./public/LOGOS.md)** - Complete logo guide
-- **[COLORES.md](./COLORES.md)** - Complete color palette (Spanish)
 
 ## 👨‍💻 Author
 
@@ -196,4 +187,4 @@ Professional Web Developer in Granada, Spain
 
 ## 📝 License
 
-All rights reserved © 2024 Nixi
+All rights reserved © 2025 Nixi
