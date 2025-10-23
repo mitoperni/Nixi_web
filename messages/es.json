@@ -1,0 +1,286 @@
+{
+  "Navigation": {
+    "services": "Servicios",
+    "portfolio": "Portfolio",
+    "kitDigital": "Kit Digital",
+    "about": "Sobre Nixi",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "Home": {
+    "hero": {
+      "badge": "Desarrollo Web en Granada",
+      "title": {
+        "normal": "Tu web hecha con",
+        "highlight": "código real",
+        "end": "no plantillas"
+      },
+      "description": "Desarrollo webs y aplicaciones personalizadas con React y Next.js. Sin limitaciones. SEO optimizado. Trato personal en Granada.",
+      "cta": {
+        "primary": "Solicitar Presupuesto",
+        "secondary": "Ver Servicios"
+      },
+      "stats": {
+        "0": "Código personalizado",
+        "1": "Google PageSpeed",
+        "2": "Optimizado",
+        "3": "Respuesta"
+      }
+    },
+    "services": {
+      "title": "Servicios",
+      "subtitle": "Desarrollo web profesional adaptado a tus necesidades",
+      "packages": {
+        "impulse": {
+          "name": "Pack Impulso",
+          "description": "Perfecta para empezar. Web corporativa profesional y optimizada.",
+          "price": "Desde 690€",
+          "features": [
+            "Web corporativa (5 secciones)",
+            "Responsive + SEO básico",
+            "Formulario de contacto",
+            "1 cuenta de correo"
+          ]
+        },
+        "takeoff": {
+          "name": "Pack Despegue",
+          "description": "Web profesional completa. Ideal para hacer crecer tu negocio.",
+          "price": "Desde 1.090€",
+          "badge": "POPULAR",
+          "features": [
+            "Web profesional (8 secciones)",
+            "SEO avanzado + contacto",
+            "5 cuentas de correo",
+            "Branding básico incluido"
+          ]
+        },
+        "ecommerce": {
+          "name": "Pack Vende Online",
+          "description": "Tienda online completa. Empieza a vender desde el día uno.",
+          "price": "Desde 1.490€",
+          "features": [
+            "eCommerce completo",
+            "Hasta 20 productos cargados",
+            "SEO productos + formación",
+            "Pasarelas de pago"
+          ]
+        }
+      }
+    },
+    "kitDigital": {
+      "badge": "AYUDAS DISPONIBLES",
+      "title": "Financia tu web con el Kit Digital",
+      "description": "Aprovecha las ayudas del gobierno español para digitalizar tu negocio. Hasta 12.000€ en subvenciones.",
+      "tiers": {
+        "small": {
+          "employees": "0-2 empleados",
+          "amount": "2.000€"
+        },
+        "medium": {
+          "employees": "3-9 empleados",
+          "amount": "6.000€"
+        },
+        "large": {
+          "employees": "10-49 empleados",
+          "amount": "12.000€"
+        }
+      },
+      "cta": "Consultar Elegibilidad"
+    },
+    "whyCode": {
+      "title": "¿Por qué código real y no WordPress?",
+      "subtitle": "La diferencia entre una web profesional y una plantilla más",
+      "reasons": {
+        "speed": {
+          "title": "Velocidad Extrema",
+          "description": "Next.js con Server-Side Rendering. Tu web carga en menos de 1 segundo. WordPress puede tardar 3-5 segundos."
+        },
+        "security": {
+          "title": "Seguridad Robusta",
+          "description": "Sin plugins de terceros que puedan tener vulnerabilidades. Código controlado al 100%."
+        },
+        "customization": {
+          "title": "100% Personalizable",
+          "description": "No estás limitado por plugins o temas. Si lo puedes imaginar, lo puedo programar."
+        },
+        "seo": {
+          "title": "SEO de Verdad",
+          "description": "Código limpio, optimizado y semántico. Google premia la velocidad y la buena estructura."
+        }
+      }
+    },
+    "process": {
+      "title": "Cómo Trabajamos",
+      "subtitle": "Proceso transparente y colaborativo",
+      "steps": {
+        "meeting": {
+          "title": "Reunión Inicial",
+          "description": "Café presencial o videollamada. Entendemos tu negocio y objetivos."
+        },
+        "proposal": {
+          "title": "Propuesta & Diseño",
+          "description": "Mockups visuales y propuesta detallada. Sin sorpresas en el precio."
+        },
+        "development": {
+          "title": "Desarrollo",
+          "description": "Actualizaciones semanales. Puedes ver el progreso en tiempo real."
+        },
+        "launch": {
+          "title": "Lanzamiento",
+          "description": "Deploy, configuración SEO, formación y soporte continuo."
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para tu nueva web?",
+      "description": "Hablemos de tu proyecto. Primera consulta sin compromiso.",
+      "button": "Solicitar Presupuesto"
+    }
+  },
+  "Services": {
+    "hero": {
+      "title": "Servicios de Desarrollo Web",
+      "description": "Soluciones web profesionales adaptadas a cada necesidad"
+    },
+    "packages": {
+      "title": "Nuestros Paquetes"
+    },
+    "custom": {
+      "title": "¿Necesitas algo diferente?",
+      "description": "Cada proyecto es único. Si necesitas funcionalidades específicas, aplicaciones web complejas o integraciones con APIs, hablemos.",
+      "button": "Contactar"
+    }
+  },
+  "KitDigital": {
+    "hero": {
+      "title": "Kit Digital",
+      "description": "Ayudas de hasta 12.000€ para digitalizar tu negocio"
+    },
+    "what": {
+      "title": "¿Qué es el Kit Digital?",
+      "description": "El Kit Digital es un programa de ayudas del Gobierno de España para impulsar la digitalización de pequeñas empresas y autónomos. Consiste en subvenciones de hasta 12.000€ para contratar soluciones digitales."
+    },
+    "amounts": {
+      "title": "Cuantías según tamaño de empresa"
+    },
+    "requirements": {
+      "title": "Requisitos",
+      "items": [
+        "Ser autónomo o empresa de 0 a 49 empleados",
+        "Estar dado de alta en la Seguridad Social",
+        "Tener domicilio fiscal en España",
+        "No estar en crisis según normativa UE"
+      ]
+    },
+    "process": {
+      "title": "Proceso de solicitud",
+      "steps": [
+        "Consulta de elegibilidad con nosotros",
+        "Test de diagnóstico digital",
+        "Solicitud del bono digital",
+        "Contratación del servicio",
+        "Ejecución del proyecto",
+        "Justificación y pago"
+      ]
+    },
+    "cta": {
+      "title": "¿Quieres saber si puedes acceder?",
+      "description": "Te ayudamos con todo el proceso de solicitud",
+      "button": "Consultar Elegibilidad"
+    }
+  },
+  "About": {
+    "hero": {
+      "title": "Sobre Nixi",
+      "description": "Desarrollo web con código real en Granada"
+    },
+    "story": {
+      "title": "Quién Soy",
+      "content": "Soy Miguel Toyas Pernichi, desarrollador web en Granada. Creé Nixi porque vi demasiadas empresas atrapadas con webs lentas, limitadas y difíciles de actualizar hechas con WordPress. Mi objetivo es simple: crear webs rápidas, seguras y 100% personalizadas usando tecnologías modernas como React y Next.js."
+    },
+    "values": {
+      "title": "Valores",
+      "items": {
+        "transparency": {
+          "title": "Transparencia Total",
+          "description": "Precios claros desde el inicio. Sin sorpresas. Sin letra pequeña."
+        },
+        "quality": {
+          "title": "Calidad sobre Cantidad",
+          "description": "Prefiero pocos proyectos bien hechos que muchos mediocres. Tú eres mi prioridad."
+        },
+        "local": {
+          "title": "Trato Personal",
+          "description": "Estoy en Granada. Podemos vernos en persona y hablar con tranquilidad."
+        },
+        "learning": {
+          "title": "Formación Continua",
+          "description": "El desarrollo web avanza rápido. Me mantengo al día con las últimas tecnologías."
+        }
+      }
+    },
+    "tech": {
+      "title": "Tecnologías que uso",
+      "items": [
+        "React / Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "PostgreSQL / MongoDB",
+        "Vercel / AWS"
+      ]
+    }
+  },
+  "Contact": {
+    "hero": {
+      "title": "Contacto",
+      "description": "Hablemos de tu proyecto"
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "location": "Granada, España",
+      "response": "Respuesta en menos de 24h"
+    },
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+34 XXX XXX XXX",
+      "optional": "opcional",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "successMessage": "¡Mensaje enviado! Te responderé en menos de 24h.",
+      "errorMessage": "Hubo un error. Por favor intenta de nuevo o escríbeme directamente."
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "description": "Artículos sobre desarrollo web, SEO y tecnología",
+    "readMore": "Leer más",
+    "back": "Volver al blog"
+  },
+  "Footer": {
+    "description": "Desarrollo web profesional en Granada con código real.",
+    "links": {
+      "title": "Enlaces",
+      "services": "Servicios",
+      "portfolio": "Portfolio",
+      "about": "Sobre Nixi",
+      "blog": "Blog",
+      "contact": "Contacto"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos y Condiciones",
+      "cookies": "Política de Cookies"
+    },
+    "rights": "Todos los derechos reservados.",
+    "location": "Granada, España"
+  }
+}

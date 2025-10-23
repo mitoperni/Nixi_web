@@ -1,0 +1,286 @@
+{
+  "Navigation": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "kitDigital": "Kit Digital",
+    "about": "About Nixi",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "Home": {
+    "hero": {
+      "badge": "Web Development in Granada",
+      "title": {
+        "normal": "Your website made with",
+        "highlight": "real code",
+        "end": "not templates"
+      },
+      "description": "Custom web development with React and Next.js. No limitations. SEO optimized. Personal service in Granada.",
+      "cta": {
+        "primary": "Request Quote",
+        "secondary": "View Services"
+      },
+      "stats": {
+        "0": "Custom code",
+        "1": "Google PageSpeed",
+        "2": "Optimized",
+        "3": "Response"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "subtitle": "Professional web development tailored to your needs",
+      "packages": {
+        "impulse": {
+          "name": "Impulse Pack",
+          "description": "Perfect to get started. Professional and optimized corporate website.",
+          "price": "From €690",
+          "features": [
+            "Corporate website (5 sections)",
+            "Responsive + Basic SEO",
+            "Contact form",
+            "1 email account"
+          ]
+        },
+        "takeoff": {
+          "name": "Takeoff Pack",
+          "description": "Complete professional website. Ideal for growing your business.",
+          "price": "From €1,090",
+          "badge": "POPULAR",
+          "features": [
+            "Professional website (8 sections)",
+            "Advanced SEO + contact",
+            "5 email accounts",
+            "Basic branding included"
+          ]
+        },
+        "ecommerce": {
+          "name": "Sell Online Pack",
+          "description": "Complete online store. Start selling from day one.",
+          "price": "From €1,490",
+          "features": [
+            "Complete eCommerce",
+            "Up to 20 products loaded",
+            "Product SEO + training",
+            "Payment gateways"
+          ]
+        }
+      }
+    },
+    "kitDigital": {
+      "badge": "GRANTS AVAILABLE",
+      "title": "Finance your website with Kit Digital",
+      "description": "Take advantage of Spanish government grants to digitize your business. Up to €12,000 in subsidies.",
+      "tiers": {
+        "small": {
+          "employees": "0-2 employees",
+          "amount": "€2,000"
+        },
+        "medium": {
+          "employees": "3-9 employees",
+          "amount": "€6,000"
+        },
+        "large": {
+          "employees": "10-49 employees",
+          "amount": "€12,000"
+        }
+      },
+      "cta": "Check Eligibility"
+    },
+    "whyCode": {
+      "title": "Why real code and not WordPress?",
+      "subtitle": "The difference between a professional website and just another template",
+      "reasons": {
+        "speed": {
+          "title": "Extreme Speed",
+          "description": "Next.js with Server-Side Rendering. Your site loads in under 1 second. WordPress can take 3-5 seconds."
+        },
+        "security": {
+          "title": "Robust Security",
+          "description": "No third-party plugins that could have vulnerabilities. 100% controlled code."
+        },
+        "customization": {
+          "title": "100% Customizable",
+          "description": "You're not limited by plugins or themes. If you can imagine it, I can code it."
+        },
+        "seo": {
+          "title": "Real SEO",
+          "description": "Clean, optimized, and semantic code. Google rewards speed and good structure."
+        }
+      }
+    },
+    "process": {
+      "title": "How We Work",
+      "subtitle": "Transparent and collaborative process",
+      "steps": {
+        "meeting": {
+          "title": "Initial Meeting",
+          "description": "In-person coffee or video call. We understand your business and goals."
+        },
+        "proposal": {
+          "title": "Proposal & Design",
+          "description": "Visual mockups and detailed proposal. No surprises in pricing."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Weekly updates. You can see progress in real time."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Deployment, SEO configuration, training, and ongoing support."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready for your new website?",
+      "description": "Let's talk about your project. First consultation without commitment.",
+      "button": "Request Quote"
+    }
+  },
+  "Services": {
+    "hero": {
+      "title": "Web Development Services",
+      "description": "Professional web solutions tailored to every need"
+    },
+    "packages": {
+      "title": "Our Packages"
+    },
+    "custom": {
+      "title": "Need something different?",
+      "description": "Every project is unique. If you need specific features, complex web applications, or API integrations, let's talk.",
+      "button": "Contact"
+    }
+  },
+  "KitDigital": {
+    "hero": {
+      "title": "Kit Digital",
+      "description": "Grants up to €12,000 to digitize your business"
+    },
+    "what": {
+      "title": "What is Kit Digital?",
+      "description": "Kit Digital is a Spanish Government grant program to boost digitalization of small businesses and freelancers. It consists of subsidies up to €12,000 to contract digital solutions."
+    },
+    "amounts": {
+      "title": "Amounts by company size"
+    },
+    "requirements": {
+      "title": "Requirements",
+      "items": [
+        "Be a freelancer or company with 0 to 49 employees",
+        "Be registered with Social Security",
+        "Have fiscal address in Spain",
+        "Not be in crisis according to EU regulations"
+      ]
+    },
+    "process": {
+      "title": "Application process",
+      "steps": [
+        "Eligibility consultation with us",
+        "Digital diagnostic test",
+        "Digital voucher application",
+        "Service contracting",
+        "Project execution",
+        "Justification and payment"
+      ]
+    },
+    "cta": {
+      "title": "Want to know if you can access it?",
+      "description": "We help you with the entire application process",
+      "button": "Check Eligibility"
+    }
+  },
+  "About": {
+    "hero": {
+      "title": "About Nixi",
+      "description": "Web development with real code in Granada"
+    },
+    "story": {
+      "title": "Who I Am",
+      "content": "I'm Miguel Toyas Pernichi, a web developer in Granada. I created Nixi because I saw too many businesses trapped with slow, limited, and hard-to-update websites built with WordPress. My goal is simple: create fast, secure, and 100% custom websites using modern technologies like React and Next.js."
+    },
+    "values": {
+      "title": "Values",
+      "items": {
+        "transparency": {
+          "title": "Total Transparency",
+          "description": "Clear pricing from the start. No surprises. No fine print."
+        },
+        "quality": {
+          "title": "Quality over Quantity",
+          "description": "I prefer a few well-done projects over many mediocre ones. You are my priority."
+        },
+        "local": {
+          "title": "Personal Service",
+          "description": "I'm in Granada. We can meet in person and talk calmly."
+        },
+        "learning": {
+          "title": "Continuous Learning",
+          "description": "Web development advances fast. I stay up to date with the latest technologies."
+        }
+      }
+    },
+    "tech": {
+      "title": "Technologies I use",
+      "items": [
+        "React / Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "PostgreSQL / MongoDB",
+        "Vercel / AWS"
+      ]
+    }
+  },
+  "Contact": {
+    "hero": {
+      "title": "Contact",
+      "description": "Let's talk about your project"
+    },
+    "info": {
+      "title": "Contact Information",
+      "location": "Granada, Spain",
+      "response": "Response in less than 24h"
+    },
+    "form": {
+      "title": "Send me a message",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+34 XXX XXX XXX",
+      "optional": "optional",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "successMessage": "Message sent! I'll respond in less than 24h.",
+      "errorMessage": "There was an error. Please try again or write to me directly."
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "description": "Articles about web development, SEO, and technology",
+    "readMore": "Read more",
+    "back": "Back to blog"
+  },
+  "Footer": {
+    "description": "Professional web development in Granada with real code.",
+    "links": {
+      "title": "Links",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "about": "About Nixi",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions",
+      "cookies": "Cookie Policy"
+    },
+    "rights": "All rights reserved.",
+    "location": "Granada, Spain"
+  }
+}

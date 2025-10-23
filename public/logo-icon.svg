@@ -1,0 +1,17 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solo el icono hexagonal - perfecto para favicon -->
+  <path d="M30 5L50 17.32V42.68L30 55L10 42.68V17.32L30 5Z" fill="url(#gradient1)" stroke="#7C3AED" stroke-width="2.5"/>
+
+  <!-- Símbolos de código -->
+  <path d="M22 24L16 30L22 36" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 24L44 30L38 36" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="33" y1="21" x2="27" y2="39" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Gradiente -->
+  <defs>
+    <linearGradient id="gradient1" x1="10" y1="5" x2="50" y2="55" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+</svg>

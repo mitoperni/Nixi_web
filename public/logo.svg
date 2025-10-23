@@ -1,0 +1,27 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icono: Hexágono con código -->
+  <path d="M30 5L45 13.66V30.34L30 39L15 30.34V13.66L30 5Z" fill="url(#gradient1)" stroke="#7C3AED" stroke-width="2"/>
+
+  <!-- Símbolos de código dentro del hexágono -->
+  <path d="M24 18L20 22L24 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 18L40 22L36 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="32" y1="16" x2="28" y2="28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Texto NIXI -->
+  <text x="60" y="35" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1F2937">
+    Nixi
+  </text>
+
+  <!-- Subtítulo opcional -->
+  <text x="60" y="48" font-family="Arial, sans-serif" font-size="10" fill="#6B7280" letter-spacing="2">
+    WEB DEV
+  </text>
+
+  <!-- Gradiente -->
+  <defs>
+    <linearGradient id="gradient1" x1="15" y1="5" x2="45" y2="39" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+</svg>
