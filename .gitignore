@@ -36,6 +36,5 @@ next-env.d.ts
 # claude
 .claude
 
-# markdowns
-INSTRUCCIONES.md
-LOGOS.md
+# local_development
+local_development/**
