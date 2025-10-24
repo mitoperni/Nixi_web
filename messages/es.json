@@ -132,9 +132,15 @@
       }
     },
     "cta": {
+      "topBadge": "Empezamos tu proyecto en días, no semanas",
       "title": "¿Listo para tu nueva web?",
       "description": "Hablemos de tu proyecto. Primera consulta sin compromiso.",
-      "button": "Solicitar Presupuesto"
+      "button": "Solicitar Presupuesto",
+      "badges": {
+        "noCommitment": "Sin compromiso",
+        "fastResponse": "Respuesta en <24h",
+        "freeConsulting": "Consulta inicial sin coste"
+      }
     }
   },
   "Services": {

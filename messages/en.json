@@ -132,9 +132,15 @@
       }
     },
     "cta": {
+      "topBadge": "We start your project in days, not weeks",
       "title": "Ready for your new website?",
       "description": "Let's talk about your project. First consultation without commitment.",
-      "button": "Request Quote"
+      "button": "Request Quote",
+      "badges": {
+        "noCommitment": "No commitment",
+        "fastResponse": "Response in <24h",
+        "freeConsulting": "Free initial consultation"
+      }
     }
   },
   "Services": {
