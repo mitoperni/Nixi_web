@@ -12,7 +12,7 @@ export default function KitDigital() {
   const tiers = ['small', 'medium', 'large'];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-violet-50 to-pink-50">
+    <section className="min-h-[100vh] flex items-center justify-center py-20 px-6 bg-gradient-to-br from-violet-50 to-pink-50">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -20,9 +20,13 @@ export default function KitDigital() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <Badge variant="warning">{t('badge')}</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mt-6 mb-4">{t('title')}</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('description')}</p>
+          <Badge variant="warning">{t("badge")}</Badge>
+          <h2 className="text-4xl md:text-5xl font-bold mt-6 mb-4">
+            {t("title")}
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {t("description")}
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -54,7 +58,7 @@ export default function KitDigital() {
             href={`/${locale}/kit-digital`}
             className="inline-block bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-dark transition"
           >
-            {t('cta')}
+            {t("cta")}
           </Link>
         </motion.div>
       </div>

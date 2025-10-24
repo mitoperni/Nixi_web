@@ -26,17 +26,17 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="min-h-[100vh] flex items-center justify-center py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('title')}</h2>
-          <p className="text-xl text-gray-600">{t('subtitle')}</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h2>
+          <p className="text-xl text-gray-600">{t("subtitle")}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {packages.map((pkg, idx) => {
             const features = t.raw(`packages.${pkg.key}.features`) as string[];
-            const hasBadge = pkg.key === 'takeoff';
+            const hasBadge = pkg.key === "takeoff";
 
             return (
               <motion.div
@@ -46,7 +46,7 @@ export default function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
               >
-                <Card className={pkg.featured ? 'border-2 border-primary' : ''}>
+                <Card className={pkg.featured ? "border-2 border-primary" : ""}>
                   {hasBadge && (
                     <div className="mb-4">
                       <Badge variant="warning" size="sm">
@@ -85,7 +85,7 @@ export default function Services() {
                     href={`/${locale}/contacto`}
                     className="block w-full text-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition"
                   >
-                    {locale === 'es' ? 'Solicitar' : 'Request'}
+                    {locale === "es" ? "Solicitar" : "Request"}
                   </Link>
                 </Card>
               </motion.div>

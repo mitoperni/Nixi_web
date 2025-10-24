@@ -62,7 +62,7 @@ export default function Process() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-50">
+    <section className="min-h-[100vh] flex items-center justify-center py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -70,8 +70,8 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('title')}</h2>
-          <p className="text-xl text-gray-600">{t('subtitle')}</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h2>
+          <p className="text-xl text-gray-600">{t("subtitle")}</p>
         </motion.div>
 
         <div className="grid md:grid-cols-4 gap-8">
@@ -91,11 +91,10 @@ export default function Process() {
                 <div className="text-primary font-bold text-sm mb-2">
                   {idx + 1}. {t(`steps.${step.key}.title`)}
                 </div>
-                <p className="text-gray-600 text-sm">{t(`steps.${step.key}.description`)}</p>
+                <p className="text-gray-600 text-sm">
+                  {t(`steps.${step.key}.description`)}
+                </p>
               </div>
-              {idx < steps.length - 1 && (
-                <div className="hidden md:block absolute top-8 -right-4 w-8 h-0.5 bg-primary opacity-20" />
-              )}
             </motion.div>
           ))}
         </div>
