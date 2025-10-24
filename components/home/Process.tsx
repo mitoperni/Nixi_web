@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Card from '@/components/ui/Card';
 import { motion } from 'framer-motion';
 
 export default function Process() {
@@ -10,7 +11,7 @@ export default function Process() {
     {
       key: 'meeting',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -23,7 +24,7 @@ export default function Process() {
     {
       key: 'proposal',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -36,7 +37,7 @@ export default function Process() {
     {
       key: 'development',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -49,7 +50,7 @@ export default function Process() {
     {
       key: 'launch',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -78,23 +79,20 @@ export default function Process() {
           {steps.map((step, idx) => (
             <motion.div
               key={step.key}
-              className="relative"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
             >
-              <div className="bg-white rounded-xl p-6 shadow-lg h-full">
-                <div className="bg-violet-100 w-16 h-16 rounded-full flex items-center justify-center text-primary mb-4">
-                  {step.icon}
-                </div>
-                <div className="text-primary font-bold text-sm mb-2">
+              <Card>
+                <div className="text-primary mb-4">{step.icon}</div>
+                <h3 className="text-xl font-bold mb-3">
                   {idx + 1}. {t(`steps.${step.key}.title`)}
-                </div>
-                <p className="text-gray-600 text-sm">
+                </h3>
+                <p className="text-gray-600">
                   {t(`steps.${step.key}.description`)}
                 </p>
-              </div>
+              </Card>
             </motion.div>
           ))}
         </div>
