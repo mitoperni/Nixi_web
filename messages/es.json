@@ -282,5 +282,18 @@
     },
     "rights": "Todos los derechos reservados.",
     "location": "Granada, España"
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "message": "Parece que esta página se perdió en el código. No te preocupes, podemos ayudarte a encontrar lo que buscas.",
+    "home": "Volver al inicio",
+    "contact": "Contactar",
+    "helpful": "También puedes visitar:",
+    "links": {
+      "services": "Servicios",
+      "portfolio": "Portfolio",
+      "about": "Sobre Nixi",
+      "blog": "Blog"
+    }
   }
 }
