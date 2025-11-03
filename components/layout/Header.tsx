@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
-import LanguageSwitcher from './LanguageSwitcher';
 import Logo from '@/components/ui/Logo';
 
 export default function Header() {
@@ -53,7 +52,6 @@ export default function Header() {
             >
               {t('blog')}
             </Link>
-            <LanguageSwitcher />
             <Link
               href={getLocalizedPath('/contacto')}
               className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition"
@@ -131,9 +129,6 @@ export default function Header() {
             >
               {t('blog')}
             </Link>
-            <div className="pt-2">
-              <LanguageSwitcher />
-            </div>
             <Link
               href={getLocalizedPath('/contacto')}
               className="block bg-primary text-white px-6 py-2 rounded-lg text-center"

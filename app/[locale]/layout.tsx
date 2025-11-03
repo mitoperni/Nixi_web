@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { LanguageModalProvider } from '@/components/LanguageModalProvider';
 
 const locales = ['es', 'en'];
 
@@ -31,6 +32,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <LanguageModalProvider />
           <Header />
           <main className="min-h-screen">
             {children}

@@ -301,5 +301,16 @@
       "about": "Sobre Nixi",
       "blog": "Blog"
     }
+  },
+  "languageModal": {
+    "title": "Bienvenido a Nixi",
+    "message": "Hemos detectado que tu idioma preferido es {language}. ¿Deseas continuar navegando en este idioma?",
+    "keep": "Continuar en {language}",
+    "switch": "Cambiar a {language}"
+  },
+  "languages": {
+    "es": "Español",
+    "en": "Inglés",
+    "changeLanguage": "Cambiar idioma"
   }
 }

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import Logo from '@/components/ui/Logo';
+import FooterLanguageSwitcher from './FooterLanguageSwitcher';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -110,10 +111,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>
-            &copy; {currentYear} Nixi - Miguel Toyas Pernichi. {t('rights')}
-          </p>
+        <div className="border-t border-gray-700 mt-12 pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 text-sm text-center sm:text-left">
+              &copy; {currentYear} Nixi - Miguel Toyas Pernichi. {t('rights')}
+            </p>
+            <FooterLanguageSwitcher />
+          </div>
         </div>
       </div>
     </footer>
