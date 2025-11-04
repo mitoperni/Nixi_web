@@ -34,7 +34,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <LanguageModalProvider />
           <Header />
-          <main className="min-h-screen">
+          <main className="min-h-screen pt-10">
             {children}
           </main>
           <Footer />

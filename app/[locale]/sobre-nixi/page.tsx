@@ -65,9 +65,9 @@ export default async function SobreNixiPage() {
   };
 
   return (
-    <div className="pt-24 pb-20">
+    <div>
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-violet-50 to-white">
+      <section className="pt-20 px-6 bg-gradient-to-b from-violet-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">{t('hero.title')}</h1>
           <p className="text-xl text-gray-600">{t('hero.description')}</p>
