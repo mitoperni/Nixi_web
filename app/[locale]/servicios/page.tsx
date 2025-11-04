@@ -22,7 +22,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-violet-50 to-white">
+      <section className="pt-20 px-6 bg-gradient-to-b from-violet-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">{t('hero.title')}</h1>
           <p className="text-xl text-gray-600">{t('hero.description')}</p>
@@ -30,9 +30,9 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
       </section>
 
       {/* Packages Section */}
-      <section className="py-20 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">{t('packages.title')}</h2>
+          <h2 className="text-4xl font-bold text-center mb-4 md:mb-16">{t('packages.title')}</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {packages.map((pkg) => {
