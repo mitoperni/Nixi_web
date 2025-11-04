@@ -12,7 +12,7 @@ export default function Hero() {
   const getLocalizedPath = (path: string) => `/${locale}${path}`;
 
   return (
-    <section className="min-h-[100vh] flex items-center justify-center pt-32 pb-20 px-6 bg-gradient-to-b from-violet-50 to-white items-center">
+    <section className="min-h-[100vh] flex items-center justify-center py-20 px-6 bg-gradient-to-b from-violet-50 to-white items-center">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center max-w-4xl mx-auto"
