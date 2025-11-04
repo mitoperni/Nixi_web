@@ -44,7 +44,7 @@ export const useLanguagePreference = () => {
     setShowModal(false);
 
     // Redirigir al nuevo idioma
-    router.push(pathname, { locale: newLocale });
+    router.push(pathname as any, { locale: newLocale });
   };
 
   return {

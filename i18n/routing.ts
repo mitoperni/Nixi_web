@@ -12,7 +12,40 @@ export const routing = defineRouting({
   localePrefix: 'always',
 
   // Enable locale detection from browser
-  localeDetection: true
+  localeDetection: true,
+
+  // Localized pathnames
+  pathnames: {
+    '/': '/',
+    '/services': {
+      es: '/servicios',
+      en: '/services'
+    },
+    '/portfolio': '/portfolio',
+    '/kit-digital': '/kit-digital',
+    '/about': {
+      es: '/sobre-nixi',
+      en: '/about'
+    },
+    '/blog': '/blog',
+    '/blog/[slug]': '/blog/[slug]',
+    '/contact': {
+      es: '/contacto',
+      en: '/contact'
+    },
+    '/privacidad': {
+      es: '/privacidad',
+      en: '/privacy'
+    },
+    '/terminos': {
+      es: '/terminos',
+      en: '/terms'
+    },
+    '/cookies': {
+      es: '/cookies',
+      en: '/cookies'
+    }
+  }
 });
 
 // Lightweight wrappers around Next.js' navigation APIs

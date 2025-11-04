@@ -1,13 +1,12 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Clock, MessageCircle } from 'lucide-react';
 
 export default function CTA() {
   const t = useTranslations('Home.cta');
-  const locale = useLocale();
 
   const badges = [
     { icon: CheckCircle, text: t('badges.noCommitment') },
@@ -84,7 +83,7 @@ export default function CTA() {
               className="flex justify-center"
             >
               <Link
-                href={`/${locale}/contacto`}
+                href="/contact"
                 className="group inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-xl text-lg font-bold shadow-2xl hover:shadow-white/25 hover:scale-105 active:scale-95 transition-all duration-300"
               >
                 {t('button')}

@@ -1,13 +1,20 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.pages.blog' });
+
   return {
-    title: 'Blog - Desarrollo Web y SEO',
-    description: 'Artículos sobre desarrollo web, SEO, React, Next.js y tecnología. Consejos para crear webs profesionales.',
+    title: t('title'),
+    description: t('description'),
   };
 }
 

@@ -1,11 +1,19 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.pages.portfolio' });
+
   return {
-    title: 'Portfolio - Proyectos de Nixi',
-    description: 'Descubre los proyectos web desarrollados por Nixi. Webs y aplicaciones hechas con código real.',
+    title: t('title'),
+    description: t('description'),
   };
 }
 

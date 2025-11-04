@@ -1,12 +1,19 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import ContactForm from '@/components/forms/ContactForm';
 import Card from '@/components/ui/Card';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.pages.contact' });
+
   return {
-    title: 'Contacto - Hablemos de tu proyecto',
-    description: 'Ponte en contacto con Nixi para discutir tu proyecto web. Primera consulta sin compromiso. Respuesta en menos de 24h.',
+    title: t('title'),
+    description: t('description'),
   };
 }
 

@@ -312,5 +312,48 @@
     "es": "Español",
     "en": "Inglés",
     "changeLanguage": "Cambiar idioma"
+  },
+  "metadata": {
+    "title": "Nixi - Desarrollo Web en Granada | React y Next.js",
+    "description": "Desarrollo web profesional en Granada. Páginas y aplicaciones web con código real, no plantillas. React, Next.js, SEO optimizado. Kit Digital disponible.",
+    "keywords": "desarrollo web Granada, programador Granada, diseño web Granada, React Granada, Next.js Granada, Kit Digital Granada, web developer Granada",
+    "openGraph": {
+      "title": "Nixi - Desarrollo Web en Granada",
+      "description": "Desarrollo web profesional con código real. React, Next.js, SEO optimizado."
+    },
+    "twitter": {
+      "title": "Nixi - Desarrollo Web en Granada",
+      "description": "Desarrollo web profesional con código real"
+    },
+    "pages": {
+      "services": {
+        "title": "Servicios de Desarrollo Web",
+        "description": "Descubre nuestros paquetes de desarrollo web profesional. Desde webs corporativas hasta tiendas online completas."
+      },
+      "contact": {
+        "title": "Contacto - Hablemos de tu proyecto",
+        "description": "Ponte en contacto con Nixi para discutir tu proyecto web. Primera consulta sin compromiso. Respuesta en menos de 24h."
+      },
+      "about": {
+        "title": "Sobre Nixi - Miguel Toyas Pernichi",
+        "description": "Conoce la historia de Nixi y por qué elegimos hacer desarrollo web con código real en Granada."
+      },
+      "portfolio": {
+        "title": "Portfolio - Proyectos de Nixi",
+        "description": "Descubre los proyectos web desarrollados por Nixi. Webs y aplicaciones hechas con código real."
+      },
+      "blog": {
+        "title": "Blog - Desarrollo Web y SEO",
+        "description": "Artículos sobre desarrollo web, SEO, React, Next.js y tecnología en Granada."
+      },
+      "blogPost": {
+        "title": "Artículo - Blog Nixi",
+        "description": "Lee nuestros artículos sobre desarrollo web, SEO y tecnología."
+      },
+      "kitDigital": {
+        "title": "Kit Digital - Ayudas hasta 12.000€",
+        "description": "Aprovecha las ayudas del Kit Digital para digitalizar tu negocio. Te ayudamos con todo el proceso."
+      }
+    }
   }
 }

@@ -1,16 +1,13 @@
 'use client';
 
-import Link from 'next/link';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import Logo from '@/components/ui/Logo';
 import FooterLanguageSwitcher from './FooterLanguageSwitcher';
 
 export default function Footer() {
   const t = useTranslations('Footer');
   const tNav = useTranslations('Navigation');
-  const locale = useLocale();
-
-  const getLocalizedPath = (path: string) => `/${locale}${path}`;
 
   const currentYear = new Date().getFullYear();
 
@@ -20,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href={getLocalizedPath("/")} className="inline-block mb-4">
+            <Link href="/" className="inline-block mb-4">
               <Logo variant="white" width={120} height={36} />
             </Link>
             <p className="text-gray-400 mb-4">{t("description")}</p>
@@ -34,7 +31,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href={getLocalizedPath("/servicios")}
+                  href="/services"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {tNav("services")}
@@ -42,7 +39,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedPath("/portfolio")}
+                  href="/portfolio"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {tNav("portfolio")}
@@ -50,7 +47,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedPath("/sobre-nixi")}
+                  href="/about"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {tNav("about")}
@@ -58,7 +55,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedPath("/blog")}
+                  href="/blog"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {tNav("blog")}
@@ -66,7 +63,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedPath("/contacto")}
+                  href="/contact"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {tNav("contact")}
@@ -83,7 +80,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href={getLocalizedPath("/privacidad")}
+                  href="/privacidad"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("legal.privacy")}
@@ -91,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedPath("/terminos")}
+                  href="/terminos"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("legal.terms")}
@@ -99,7 +96,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedPath("/cookies")}
+                  href="/cookies"
                   className="text-gray-400 hover:text-white transition"
                 >
                   {t("legal.cookies")}

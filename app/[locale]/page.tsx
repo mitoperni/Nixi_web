@@ -1,4 +1,5 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Hero from '@/components/home/Hero';
 import Services from '@/components/home/Services';
 import KitDigital from '@/components/home/KitDigital';
@@ -6,10 +7,19 @@ import WhyCodeReal from '@/components/home/WhyCodeReal';
 import Process from '@/components/home/Process';
 import CTA from '@/components/home/CTA';
 
-export const metadata: Metadata = {
-  title: 'Nixi - Desarrollo Web en Granada | React y Next.js',
-  description: 'Desarrollo web profesional en Granada. Páginas y aplicaciones web con código real, no plantillas. React, Next.js, SEO optimizado. Kit Digital disponible.',
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export default function HomePage() {
   // Schema.org structured data for SEO

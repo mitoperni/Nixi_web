@@ -1,14 +1,21 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.pages.services' });
+
   return {
-    title: 'Servicios de Desarrollo Web',
-    description: 'Descubre nuestros paquetes de desarrollo web profesional. Desde webs corporativas hasta tiendas online completas.',
+    title: t('title'),
+    description: t('description'),
   };
 }
 

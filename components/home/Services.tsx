@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { motion } from 'framer-motion';
@@ -82,7 +82,7 @@ export default function Services() {
                     ))}
                   </ul>
                   <Link
-                    href={`/${locale}/contacto`}
+                    href="/contact"
                     className="block w-full text-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition"
                   >
                     {locale === "es" ? "Solicitar" : "Request"}

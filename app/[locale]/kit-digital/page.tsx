@@ -1,13 +1,20 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Badge from '@/components/ui/Badge';
 import Card from '@/components/ui/Card';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.pages.kitDigital' });
+
   return {
-    title: 'Kit Digital - Ayudas hasta 12.000€',
-    description: 'Financia tu web con el Kit Digital. Ayudas del gobierno español de hasta 12.000€ para digitalizar tu negocio.',
+    title: t('title'),
+    description: t('description'),
   };
 }
 

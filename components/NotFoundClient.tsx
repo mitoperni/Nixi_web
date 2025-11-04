@@ -1,14 +1,11 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { motion } from 'framer-motion';
 
 export default function NotFoundClient() {
   const t = useTranslations('NotFound');
-  const locale = useLocale();
-
-  const getLocalizedPath = (path: string) => `/${locale}${path}`;
 
   return (
     <div className="min-h-[100vh] flex items-center justify-center px-6 bg-gradient-to-b from-violet-50 to-white relative overflow-hidden">
@@ -96,7 +93,7 @@ export default function NotFoundClient() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href={getLocalizedPath('/')}
+                href="/"
                 className="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-dark transition-colors inline-block"
               >
                 {t('home')}
@@ -107,7 +104,7 @@ export default function NotFoundClient() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href={getLocalizedPath('/contacto')}
+                href="/contact"
                 className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-gray-400 transition-colors inline-block bg-white"
               >
                 {t('contact')}
@@ -126,14 +123,14 @@ export default function NotFoundClient() {
           <p className="text-sm text-gray-500 mb-4">{t('helpful')}</p>
           <div className="flex flex-wrap gap-4 justify-center">
             {[
-              { key: 'services', path: '/servicios' },
+              { key: 'services', path: '/services' },
               { key: 'portfolio', path: '/portfolio' },
-              { key: 'about', path: '/sobre-nixi' },
+              { key: 'about', path: '/about' },
               { key: 'blog', path: '/blog' }
             ].map(({ key, path }) => (
               <Link
                 key={key}
-                href={getLocalizedPath(path)}
+                href={path as any}
                 className="text-primary hover:text-primary-dark transition-colors font-medium"
               >
                 {t(`links.${key}`)}

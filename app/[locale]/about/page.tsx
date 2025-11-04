@@ -1,11 +1,18 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Card from '@/components/ui/Card';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.pages.about' });
+
   return {
-    title: 'Sobre Nixi - Miguel Toyas Pernichi',
-    description: 'Conoce la historia de Nixi y por qué elegimos hacer desarrollo web con código real en Granada.',
+    title: t('title'),
+    description: t('description'),
   };
 }
 

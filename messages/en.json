@@ -312,5 +312,48 @@
     "es": "Spanish",
     "en": "English",
     "changeLanguage": "Change language"
+  },
+  "metadata": {
+    "title": "Nixi - Web Development in Granada | React & Next.js",
+    "description": "Professional web development in Granada. Custom websites and applications with real code, not templates. React, Next.js, SEO optimized. Kit Digital available.",
+    "keywords": "web development Granada, programmer Granada, web design Granada, React Granada, Next.js Granada, Kit Digital Granada, web developer Granada Spain",
+    "openGraph": {
+      "title": "Nixi - Web Development in Granada",
+      "description": "Professional web development with real code. React, Next.js, SEO optimized."
+    },
+    "twitter": {
+      "title": "Nixi - Web Development in Granada",
+      "description": "Professional web development with real code"
+    },
+    "pages": {
+      "services": {
+        "title": "Web Development Services",
+        "description": "Discover our professional web development packages. From corporate websites to complete online stores."
+      },
+      "contact": {
+        "title": "Contact - Let's Talk About Your Project",
+        "description": "Get in touch with Nixi to discuss your web project. First consultation without commitment. Response in less than 24h."
+      },
+      "about": {
+        "title": "About Nixi - Miguel Toyas Pernichi",
+        "description": "Learn about Nixi's story and why we choose to do web development with real code in Granada."
+      },
+      "portfolio": {
+        "title": "Portfolio - Nixi Projects",
+        "description": "Discover web projects developed by Nixi. Websites and applications made with real code."
+      },
+      "blog": {
+        "title": "Blog - Web Development & SEO",
+        "description": "Articles about web development, SEO, React, Next.js and technology in Granada."
+      },
+      "blogPost": {
+        "title": "Article - Nixi Blog",
+        "description": "Read our articles about web development, SEO and technology."
+      },
+      "kitDigital": {
+        "title": "Kit Digital - Grants up to €12,000",
+        "description": "Take advantage of Kit Digital grants to digitize your business. We help you with the entire process."
+      }
+    }
   }
 }

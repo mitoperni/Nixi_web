@@ -1,12 +1,19 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Badge from '@/components/ui/Badge';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.pages.blogPost' });
+
   return {
-    title: 'Artículo - Blog Nixi',
-    description: 'Lee nuestros artículos sobre desarrollo web, SEO y tecnología.',
+    title: t('title'),
+    description: t('description'),
   };
 }
 

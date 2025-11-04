@@ -1,15 +1,12 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { motion } from 'framer-motion';
 import Badge from '@/components/ui/Badge';
 
 export default function Hero() {
   const t = useTranslations('Home.hero');
-  const locale = useLocale();
-
-  const getLocalizedPath = (path: string) => `/${locale}${path}`;
 
   return (
     <section className="min-h-[100vh] flex items-center justify-center py-20 px-6 bg-gradient-to-b from-violet-50 to-white items-center">
@@ -36,13 +33,13 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href={getLocalizedPath("/contacto")}
+              href="/contact"
               className="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-dark transition"
             >
               {t("cta.primary")}
             </Link>
             <Link
-              href={getLocalizedPath("/servicios")}
+              href="/services"
               className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-gray-400 transition"
             >
               {t("cta.secondary")}

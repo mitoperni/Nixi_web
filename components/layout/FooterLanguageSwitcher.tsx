@@ -34,7 +34,7 @@ export default function FooterLanguageSwitcher() {
 
   const handleLanguageChange = (newLocale: string) => {
     setIsOpen(false);
-    router.push(pathname, { locale: newLocale });
+    router.push(pathname as any, { locale: newLocale });
   };
 
   return (
