@@ -35,12 +35,6 @@ export default function Header() {
               {t('portfolio')}
             </Link>
             <Link
-              href={getLocalizedPath('/kit-digital')}
-              className="text-gray-600 hover:text-gray-900 transition"
-            >
-              {t('kitDigital')}
-            </Link>
-            <Link
               href={getLocalizedPath('/sobre-nixi')}
               className="text-gray-600 hover:text-gray-900 transition"
             >

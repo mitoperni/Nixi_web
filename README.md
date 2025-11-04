@@ -70,7 +70,7 @@ nixi-website/
 │   ├── layout.tsx            # Root layout
 │   └── globals.css           # Global styles
 ├── components/
-│   ├── layout/               # 🧩 Header, Footer, LanguageSwitcher
+│   ├── layout/               # 🧩 Header and Footer
 │   ├── home/                 # 🏠 Hero, Services, KitDigital, etc.
 │   ├── ui/                   # 🎨 Button, Card, Badge, Logo
 │   └── forms/                # 📝 ContactForm
