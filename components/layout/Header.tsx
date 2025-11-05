@@ -100,13 +100,6 @@ export default function Header() {
               {t('portfolio')}
             </Link>
             <Link
-              href="/kit-digital"
-              className="block text-gray-600 hover:text-gray-900"
-              onClick={() => setIsOpen(false)}
-            >
-              {t('kitDigital')}
-            </Link>
-            <Link
               href="/about"
               className="block text-gray-600 hover:text-gray-900"
               onClick={() => setIsOpen(false)}

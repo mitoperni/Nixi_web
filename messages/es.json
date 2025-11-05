@@ -2,7 +2,6 @@
   "Navigation": {
     "services": "Servicios",
     "portfolio": "Portfolio",
-    "kitDigital": "Kit Digital",
     "about": "Sobre Nixi",
     "blog": "Blog",
     "contact": "Contacto"
@@ -66,26 +65,6 @@
           ]
         }
       }
-    },
-    "kitDigital": {
-      "badge": "AYUDAS DISPONIBLES",
-      "title": "Financia tu web con el Kit Digital",
-      "description": "Aprovecha las ayudas del gobierno español para digitalizar tu negocio. Hasta 12.000€ en subvenciones.",
-      "tiers": {
-        "small": {
-          "employees": "0-2 empleados",
-          "amount": "2.000€"
-        },
-        "medium": {
-          "employees": "3-9 empleados",
-          "amount": "6.000€"
-        },
-        "large": {
-          "employees": "10-49 empleados",
-          "amount": "12.000€"
-        }
-      },
-      "cta": "Consultar Elegibilidad"
     },
     "whyCode": {
       "title": "¿Por qué código real y no WordPress?",
@@ -155,44 +134,6 @@
       "title": "¿Necesitas algo diferente?",
       "description": "Cada proyecto es único. Si necesitas funcionalidades específicas, aplicaciones web complejas o integraciones con APIs, hablemos.",
       "button": "Contactar"
-    }
-  },
-  "KitDigital": {
-    "hero": {
-      "title": "Kit Digital",
-      "description": "Ayudas de hasta 12.000€ para digitalizar tu negocio"
-    },
-    "what": {
-      "title": "¿Qué es el Kit Digital?",
-      "description": "El Kit Digital es un programa de ayudas del Gobierno de España para impulsar la digitalización de pequeñas empresas y autónomos. Consiste en subvenciones de hasta 12.000€ para contratar soluciones digitales."
-    },
-    "amounts": {
-      "title": "Cuantías según tamaño de empresa"
-    },
-    "requirements": {
-      "title": "Requisitos",
-      "items": [
-        "Ser autónomo o empresa de 0 a 49 empleados",
-        "Estar dado de alta en la Seguridad Social",
-        "Tener domicilio fiscal en España",
-        "No estar en crisis según normativa UE"
-      ]
-    },
-    "process": {
-      "title": "Proceso de solicitud",
-      "steps": [
-        "Consulta de elegibilidad con nosotros",
-        "Test de diagnóstico digital",
-        "Solicitud del bono digital",
-        "Contratación del servicio",
-        "Ejecución del proyecto",
-        "Justificación y pago"
-      ]
-    },
-    "cta": {
-      "title": "¿Quieres saber si puedes acceder?",
-      "description": "Te ayudamos con todo el proceso de solicitud",
-      "button": "Consultar Elegibilidad"
     }
   },
   "About": {
@@ -315,8 +256,8 @@
   },
   "metadata": {
     "title": "Nixi - Desarrollo Web en Granada | React y Next.js",
-    "description": "Desarrollo web profesional en Granada. Páginas y aplicaciones web con código real, no plantillas. React, Next.js, SEO optimizado. Kit Digital disponible.",
-    "keywords": "desarrollo web Granada, programador Granada, diseño web Granada, React Granada, Next.js Granada, Kit Digital Granada, web developer Granada",
+    "description": "Desarrollo web profesional en Granada. Páginas y aplicaciones web con código real, no plantillas. React, Next.js, SEO optimizado.",
+    "keywords": "desarrollo web Granada, programador Granada, diseño web Granada, React Granada, Next.js Granada, web developer Granada",
     "openGraph": {
       "title": "Nixi - Desarrollo Web en Granada",
       "description": "Desarrollo web profesional con código real. React, Next.js, SEO optimizado."
@@ -349,10 +290,6 @@
       "blogPost": {
         "title": "Artículo - Blog Nixi",
         "description": "Lee nuestros artículos sobre desarrollo web, SEO y tecnología."
-      },
-      "kitDigital": {
-        "title": "Kit Digital - Ayudas hasta 12.000€",
-        "description": "Aprovecha las ayudas del Kit Digital para digitalizar tu negocio. Te ayudamos con todo el proceso."
       }
     }
   }

@@ -52,20 +52,6 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
       category: 'SEO',
       readTime: locale === 'es' ? '8 min lectura' : '8 min read',
     },
-    {
-      slug: 'kit-digital-como-conseguirlo',
-      title:
-        locale === 'es'
-          ? 'Kit Digital: Cómo conseguir hasta 12.000€ para tu web'
-          : 'Kit Digital: How to get up to €12,000 for your website',
-      excerpt:
-        locale === 'es'
-          ? 'Todo lo que necesitas saber sobre las ayudas del Kit Digital en 2024.'
-          : 'Everything you need to know about Kit Digital grants in 2024.',
-      date: '2024-01-05',
-      category: locale === 'es' ? 'Ayudas' : 'Grants',
-      readTime: locale === 'es' ? '6 min lectura' : '6 min read',
-    },
   ];
 
   return (

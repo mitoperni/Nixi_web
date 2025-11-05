@@ -24,7 +24,6 @@
 - 📧 **Contact form** with validation (React Hook Form + Zod)
 - 📝 **Blog** ready for MDX
 - 💜 **Professional purple palette** - Distinctive branding
-- 🎯 **Kit Digital** - Government grants information
 
 ## 🛠 Tech Stack
 
@@ -61,7 +60,6 @@ nixi-website/
 │   │   ├── page.tsx          # Homepage
 │   │   ├── servicios/        # Services page
 │   │   ├── portfolio/        # Projects
-│   │   ├── kit-digital/      # Kit Digital info
 │   │   ├── sobre-nixi/       # About page
 │   │   ├── blog/             # Blog
 │   │   └── contacto/         # Contact form
@@ -71,7 +69,7 @@ nixi-website/
 │   └── globals.css           # Global styles
 ├── components/
 │   ├── layout/               # 🧩 Header and Footer
-│   ├── home/                 # 🏠 Hero, Services, KitDigital, etc.
+│   ├── home/                 # 🏠 Hero, Services, etc.
 │   ├── ui/                   # 🎨 Button, Card, Badge, Logo
 │   └── forms/                # 📝 ContactForm
 ├── i18n/                     # 🌐 next-intl configuration
@@ -124,7 +122,6 @@ import Logo from '@/components/ui/Logo';
 - 🏠 `/` - Homepage with all sections
 - 💼 `/servicios` - Service packages detail
 - 🎨 `/portfolio` - Projects (with placeholders)
-- 💰 `/kit-digital` - Government grants information
 - 👤 `/sobre-nixi` - About, values, and technologies
 - 📝 `/blog` - Articles listing (MDX-ready)
 - 📰 `/blog/[slug]` - Individual post template

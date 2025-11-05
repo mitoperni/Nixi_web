@@ -22,7 +22,6 @@ export const routing = defineRouting({
       en: '/services'
     },
     '/portfolio': '/portfolio',
-    '/kit-digital': '/kit-digital',
     '/about': {
       es: '/sobre-nixi',
       en: '/about'

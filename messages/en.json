@@ -2,7 +2,6 @@
   "Navigation": {
     "services": "Services",
     "portfolio": "Portfolio",
-    "kitDigital": "Kit Digital",
     "about": "About Nixi",
     "blog": "Blog",
     "contact": "Contact"
@@ -66,26 +65,6 @@
           ]
         }
       }
-    },
-    "kitDigital": {
-      "badge": "GRANTS AVAILABLE",
-      "title": "Finance your website with Kit Digital",
-      "description": "Take advantage of Spanish government grants to digitize your business. Up to €12,000 in subsidies.",
-      "tiers": {
-        "small": {
-          "employees": "0-2 employees",
-          "amount": "€2,000"
-        },
-        "medium": {
-          "employees": "3-9 employees",
-          "amount": "€6,000"
-        },
-        "large": {
-          "employees": "10-49 employees",
-          "amount": "€12,000"
-        }
-      },
-      "cta": "Check Eligibility"
     },
     "whyCode": {
       "title": "Why real code and not WordPress?",
@@ -155,44 +134,6 @@
       "title": "Need something different?",
       "description": "Every project is unique. If you need specific features, complex web applications, or API integrations, let's talk.",
       "button": "Contact"
-    }
-  },
-  "KitDigital": {
-    "hero": {
-      "title": "Kit Digital",
-      "description": "Grants up to €12,000 to digitize your business"
-    },
-    "what": {
-      "title": "What is Kit Digital?",
-      "description": "Kit Digital is a Spanish Government grant program to boost digitalization of small businesses and freelancers. It consists of subsidies up to €12,000 to contract digital solutions."
-    },
-    "amounts": {
-      "title": "Amounts by company size"
-    },
-    "requirements": {
-      "title": "Requirements",
-      "items": [
-        "Be a freelancer or company with 0 to 49 employees",
-        "Be registered with Social Security",
-        "Have fiscal address in Spain",
-        "Not be in crisis according to EU regulations"
-      ]
-    },
-    "process": {
-      "title": "Application process",
-      "steps": [
-        "Eligibility consultation with us",
-        "Digital diagnostic test",
-        "Digital voucher application",
-        "Service contracting",
-        "Project execution",
-        "Justification and payment"
-      ]
-    },
-    "cta": {
-      "title": "Want to know if you can access it?",
-      "description": "We help you with the entire application process",
-      "button": "Check Eligibility"
     }
   },
   "About": {
@@ -315,8 +256,8 @@
   },
   "metadata": {
     "title": "Nixi - Web Development in Granada | React & Next.js",
-    "description": "Professional web development in Granada. Custom websites and applications with real code, not templates. React, Next.js, SEO optimized. Kit Digital available.",
-    "keywords": "web development Granada, programmer Granada, web design Granada, React Granada, Next.js Granada, Kit Digital Granada, web developer Granada Spain",
+    "description": "Professional web development in Granada. Custom websites and applications with real code, not templates. React, Next.js, SEO optimized.",
+    "keywords": "web development Granada, programmer Granada, web design Granada, React Granada, Next.js Granada, web developer Granada Spain",
     "openGraph": {
       "title": "Nixi - Web Development in Granada",
       "description": "Professional web development with real code. React, Next.js, SEO optimized."
@@ -349,10 +290,6 @@
       "blogPost": {
         "title": "Article - Nixi Blog",
         "description": "Read our articles about web development, SEO and technology."
-      },
-      "kitDigital": {
-        "title": "Kit Digital - Grants up to €12,000",
-        "description": "Take advantage of Kit Digital grants to digitize your business. We help you with the entire process."
       }
     }
   }

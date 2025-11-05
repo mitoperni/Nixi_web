@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Hero from '@/components/home/Hero';
 import Services from '@/components/home/Services';
-import KitDigital from '@/components/home/KitDigital';
 import WhyCodeReal from '@/components/home/WhyCodeReal';
 import Process from '@/components/home/Process';
 import CTA from '@/components/home/CTA';
@@ -60,7 +59,6 @@ export default function HomePage() {
       />
       <Hero />
       <Services />
-      <KitDigital />
       <WhyCodeReal />
       <Process />
       <CTA />

@@ -167,11 +167,6 @@ export default async function ContactoPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-gray-700">
-                      {t.raw('info.location') === 'Granada, España'
-                        ? 'Kit Digital disponible'
-                        : 'Kit Digital available'}
-                    </span>
                   </li>
                 </ul>
               </div>
