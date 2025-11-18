@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import NotFoundClient from '@/components/NotFoundClient';
 import './globals.css';
-import { getLocaleFromRequest } from '@/lib/utils';
+import { getLocaleFromRequest } from '@/lib/server-utils';
 
 export default async function NotFound() {
   const locale = await getLocaleFromRequest();
