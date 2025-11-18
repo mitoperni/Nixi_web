@@ -133,7 +133,17 @@
     "custom": {
       "title": "¿Necesitas algo diferente?",
       "description": "Cada proyecto es único. Si necesitas funcionalidades específicas, aplicaciones web complejas o integraciones con APIs, hablemos.",
-      "button": "Contactar"
+      "button": "Contactar",
+      "marqueeItems": [
+        "Plataformas SaaS",
+        "Integración de APIs",
+        "Paneles de Control",
+        "Automatizaciones",
+        "Sistemas de Reservas",
+        "Portales de Clientes",
+        "Aplicaciones Multiidioma",
+        "Aplicaciones Web Progresivas"
+      ]
     }
   },
   "About": {

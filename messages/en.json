@@ -133,7 +133,17 @@
     "custom": {
       "title": "Need something different?",
       "description": "Every project is unique. If you need specific features, complex web applications, or API integrations, let's talk.",
-      "button": "Contact"
+      "button": "Contact",
+      "marqueeItems": [
+        "SaaS Platforms",
+        "APIs & Integrations",
+        "Custom Dashboards",
+        "Automations",
+        "Booking Systems",
+        "Client Portals",
+        "Multilingual Apps",
+        "Progressive Web Apps"
+      ]
     }
   },
   "About": {
