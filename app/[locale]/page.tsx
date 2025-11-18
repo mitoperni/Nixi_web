@@ -20,18 +20,24 @@ export async function generateMetadata({
   };
 }
 
-export default function HomePage() {
-  // Schema.org structured data for SEO
+export default async function HomePage({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'jsonLd' });
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Nixi',
-    description: 'Desarrollo web profesional en Granada con código real',
+    description: t('description'),
     url: 'https://nixi.es',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Granada',
-      addressRegion: 'Andalucía',
+      addressRegion: t('addressRegion'),
       addressCountry: 'ES',
     },
     geo: {
