@@ -6,6 +6,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { LanguageModalProvider } from '@/components/LanguageModalProvider';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const locales = ['es', 'en'];
 
@@ -84,6 +85,7 @@ export default async function LocaleLayout({
           </main>
           <Footer />
           <Analytics />
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
