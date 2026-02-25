@@ -196,7 +196,11 @@
     "info": {
       "title": "Información de Contacto",
       "location": "Granada, España",
-      "response": "Respuesta en menos de 24h"
+      "response": "Respuesta en menos de 24h",
+      "whyTitle": "¿Por qué elegirnos?",
+      "why1": "Código real, no plantillas WordPress",
+      "why2": "Trato personal y directo",
+      "why3": "Optimización SEO incluida"
     },
     "form": {
       "title": "Envíame un mensaje",

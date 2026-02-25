@@ -196,7 +196,11 @@
     "info": {
       "title": "Contact Information",
       "location": "Granada, Spain",
-      "response": "Response in less than 24h"
+      "response": "Response in less than 24h",
+      "whyTitle": "Why choose us?",
+      "why1": "Real code, not WordPress templates",
+      "why2": "Personal and direct service",
+      "why3": "SEO optimization included"
     },
     "form": {
       "title": "Send me a message",

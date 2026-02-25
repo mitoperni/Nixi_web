@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { MapPin, Clock, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/forms/ContactForm';
 import Card from '@/components/ui/Card';
 
@@ -42,25 +43,7 @@ export default async function ContactoPage() {
                 <Card hover={false}>
                   <div className="flex items-start">
                     <div className="text-primary mr-4 mt-1">
-                      <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
+                      <MapPin className="w-6 h-6" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t('info.location')}</h3>
@@ -72,102 +55,24 @@ export default async function ContactoPage() {
                 <Card hover={false}>
                   <div className="flex items-start">
                     <div className="text-primary mr-4 mt-1">
-                      <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
+                      <Clock className="w-6 h-6" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t('info.response')}</h3>
-                      <p className="text-gray-600">
-                        {t('info.response')}
-                      </p>
                     </div>
                   </div>
                 </Card>
               </div>
 
               <div className="mt-12">
-                <h3 className="text-2xl font-bold mb-6">
-                  {t.raw('info.location') === 'Granada, España' ? '¿Por qué elegirnos?' : 'Why choose us?'}
-                </h3>
+                <h3 className="text-2xl font-bold mb-6">{t('info.whyTitle')}</h3>
                 <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-gray-700">
-                      {t.raw('info.location') === 'Granada, España'
-                        ? 'Código real, no plantillas WordPress'
-                        : 'Real code, not WordPress templates'}
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-gray-700">
-                      {t.raw('info.location') === 'Granada, España'
-                        ? 'Trato personal y directo'
-                        : 'Personal and direct service'}
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-gray-700">
-                      {t.raw('info.location') === 'Granada, España'
-                        ? 'Optimización SEO incluida'
-                        : 'SEO optimization included'}
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </li>
+                  {(['why1', 'why2', 'why3'] as const).map((key) => (
+                    <li key={key} className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">{t(`info.${key}`)}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

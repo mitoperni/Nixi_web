@@ -38,3 +38,5 @@ next-env.d.ts
 
 # local_development
 local_development
+docs
+.vscode
