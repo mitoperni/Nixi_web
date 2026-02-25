@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name too short'),
-  email: z.string().email('Invalid email'),
+  email: z.email('Invalid email'),
   phone: z.string().optional(),
   message: z.string().min(10, 'Message too short'),
 });

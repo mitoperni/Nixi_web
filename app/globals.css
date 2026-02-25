@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #7C3AED;
+  --color-primary-dark: #6D28D9;
+  --color-primary-light: #A78BFA;
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: #1F2937;
+  --color-accent: #EC4899;
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-bg-violet-soft: #F5F3FF;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --font-family-sans: 'Inter', sans-serif;
+}
 
 @layer base {
   :root {
@@ -37,39 +58,90 @@
   }
 
   body {
-    @apply font-sans antialiased text-gray-900;
+    font-family: var(--font-family-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #111827;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
+    font-weight: 700;
   }
 }
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    background: linear-gradient(to right, #7C3AED, #EC4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .section-padding {
-    @apply py-20 px-6 md:py-32 md:px-8;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
   .container-custom {
-    @apply max-w-7xl mx-auto px-6;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 inline-block text-center;
+    background-color: #7C3AED;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btn-primary:hover {
+    background-color: #6D28D9;
   }
 
   .btn-secondary {
-    @apply border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-gray-400 transition-colors duration-200 inline-block text-center;
+    border: 2px solid #D1D5DB;
+    color: #374151;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: border-color 0.2s;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btn-secondary:hover {
+    border-color: #9CA3AF;
   }
 
   .card {
-    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
   }
 }
 

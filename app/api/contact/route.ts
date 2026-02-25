@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 const contactSchema = z.object({
   name: z.string().min(2),
-  email: z.string().email(),
+  email: z.email(),
   phone: z.string().optional(),
   message: z.string().min(10),
 });
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
 
     if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { error: 'Invalid form data', details: error.errors },
+        { error: 'Invalid form data', details: error.issues },
         { status: 400 }
       );
     }

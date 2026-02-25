@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 
 interface StarProps {
   mousePosition: { x: number | null; y: number | null };
-  containerRef: React.RefObject<HTMLDivElement>;
+  containerRef: React.RefObject<HTMLDivElement | null>;
 }
 
 function Star({ mousePosition, containerRef }: StarProps) {
@@ -79,7 +79,7 @@ function Star({ mousePosition, containerRef }: StarProps) {
 
 interface InteractiveStarfieldProps {
   mousePosition: { x: number | null; y: number | null };
-  containerRef: React.RefObject<HTMLDivElement>;
+  containerRef: React.RefObject<HTMLDivElement | null>;
 }
 
 export function InteractiveStarfield({
