@@ -1,0 +1,70 @@
+---
+title: "Velocidad web y SEO en 2026: por qué Google penaliza a la mayoría de webs WordPress"
+excerpt: "Los Core Web Vitals de Google siguen siendo factores de posicionamiento clave en 2026. Las webs con WordPress suelen obtener puntuaciones de 40-60/100 en móvil. Las webs con Next.js llegan a 95-100/100. Te explicamos por qué importa."
+date: "2026-02-03"
+category: "SEO y Rendimiento"
+readTime: "8 min lectura"
+---
+
+Cuando un potencial cliente llega a tu web y tarda más de 3 segundos en cargar, el 53% se va. Se va a tu competencia. Y si tu web está hecha con WordPress con varios plugins instalados, es muy probable que eso esté pasando ahora mismo.
+
+## Qué son los Core Web Vitals y por qué Google los usa en 2026
+
+Los Core Web Vitals son tres métricas que Google usa para medir la experiencia real del usuario en una web:
+
+- **LCP (Largest Contentful Paint):** Cuánto tarda en aparecer el elemento principal de la página. Para ser "bueno", tiene que ser inferior a 2,5 segundos.
+- **INP (Interaction to Next Paint):** Qué tan rápido responde la web cuando el usuario hace clic en algo. Debe ser inferior a 200ms.
+- **CLS (Cumulative Layout Shift):** Si los elementos de la página "saltan" mientras carga, lo que desorienta al usuario. Debe ser inferior a 0,1.
+
+Google utiliza estas métricas como factor de posicionamiento desde 2021, y en 2026 siguen siendo una señal directa de ranking. **Las webs que pasan los tres umbrales ven un 24% menos de tasa de rebote** y mejoras medibles en tráfico orgánico frente a las que no los pasan.
+
+## El problema de WordPress con el rendimiento
+
+WordPress fue diseñado en 2003 como un sistema de blogs. En 2026, la mayoría de webs WordPress tienen:
+
+- Un tema que carga CSS y JavaScript de miles de componentes aunque no los use
+- 15-30 plugins activos, cada uno añadiendo su propio código
+- Consultas a la base de datos para cada página vista
+- Imágenes sin optimizar servidas en formatos antiguos
+
+El resultado típico en PageSpeed Insights para una web WordPress con Elementor o Divi en móvil: **40-60 puntos sobre 100**.
+
+Para que te hagas una idea, Google considera que una puntuación de 90 o más es "buena". Menos de 50 se considera "deficiente".
+
+## Qué consigue Next.js con los mismos contenidos
+
+Next.js, el framework con el que desarrollamos en Nixi Web, funciona de forma radicalmente diferente:
+
+- **Genera HTML estático** en el momento del build, no en cada visita
+- **Sin base de datos** por defecto: los datos se pre-calculan
+- **Optimización automática de imágenes** en WebP/AVIF, el formato moderno
+- **Code splitting automático**: cada página solo carga el JavaScript que necesita
+- **Servidor en el edge**: tu web se sirve desde el servidor más cercano al usuario
+
+El resultado: puntuaciones habituales de **95-100/100 en PageSpeed** tanto en escritorio como en móvil.
+
+Un caso real documentado: Digital Polygon migró su web de WordPress a Next.js. El rendimiento en móvil pasó de 51 a 86 puntos. En escritorio llegaron al 100.
+
+## La diferencia en la práctica para tu negocio
+
+Si tienes una tienda local en Granada y tu web carga en 5 segundos, y tu competencia tiene una web que carga en 1,2 segundos, Google va a posicionar la de tu competencia primero.
+
+No porque tenga más contenido. No porque lleve más tiempo. Sino porque **la experiencia del usuario es mejor**.
+
+Y no solo importa para el posicionamiento: una web más rápida convierte mejor. Los estudios de Google muestran que cada segundo de mejora en el tiempo de carga mejora las conversiones un 7%.
+
+## Conclusión
+
+La velocidad web no es un lujo técnico. Es un factor directo de visibilidad en Google y de conversión de visitantes en clientes.
+
+Si quieres saber exactamente cuánto está penalizando la velocidad de tu web actual, **contáctanos en Nixi Web** y hacemos un análisis gratuito de tu PageSpeed. Sin compromiso.
+
+---
+
+## Fuentes
+
+- [How important are Core Web Vitals for SEO in 2026? – White Label Coders](https://whitelabelcoders.com/blog/how-important-are-core-web-vitals-for-seo-in-2026/)
+- [Core Web Vitals 2026: INP, LCP & CLS Optimization – Digital Applied](https://www.digitalapplied.com/blog/core-web-vitals-2026-inp-lcp-cls-optimization-guide)
+- [Next.js vs WordPress 2025: Performance, SEO, Cost – Neodigit](https://neodigit.fr/en/blog/nextjs-vs-wordpress)
+- [2025 In Review: What's New In Web Performance? – DebugBear](https://www.debugbear.com/blog/2025-in-web-performance)
+- [SEO: Web Performance & Core Web Vitals – Next.js Docs](https://nextjs.org/learn/seo/web-performance)

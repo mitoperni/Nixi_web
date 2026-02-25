@@ -3,9 +3,10 @@ import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
+import { getAllPostsMeta } from '@/lib/mdx';
 
 export async function generateMetadata({
-  params
+  params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
@@ -21,38 +22,7 @@ export async function generateMetadata({
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations('Blog');
-
-  // Placeholder blog posts
-  const posts = [
-    {
-      slug: 'por-que-next-js-es-mejor-que-wordpress',
-      title:
-        locale === 'es'
-          ? '¿Por qué Next.js es mejor que WordPress para tu negocio?'
-          : 'Why Next.js is better than WordPress for your business?',
-      excerpt:
-        locale === 'es'
-          ? 'Descubre las ventajas de usar Next.js frente a WordPress: velocidad, seguridad y SEO real.'
-          : 'Discover the advantages of using Next.js over WordPress: speed, security and real SEO.',
-      date: '2024-01-15',
-      category: locale === 'es' ? 'Desarrollo Web' : 'Web Development',
-      readTime: locale === 'es' ? '5 min lectura' : '5 min read',
-    },
-    {
-      slug: 'guia-seo-local-granada',
-      title:
-        locale === 'es'
-          ? 'Guía completa de SEO local para negocios en Granada'
-          : 'Complete local SEO guide for businesses in Granada',
-      excerpt:
-        locale === 'es'
-          ? 'Aprende a posicionar tu negocio en Google para búsquedas locales en Granada.'
-          : 'Learn how to position your business on Google for local searches in Granada.',
-      date: '2024-01-10',
-      category: 'SEO',
-      readTime: locale === 'es' ? '8 min lectura' : '8 min read',
-    },
-  ];
+  const posts = getAllPostsMeta(locale);
 
   return (
     <div>
@@ -94,20 +64,6 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
                 </Card>
               </Link>
             ))}
-          </div>
-
-          {/* Coming Soon Message */}
-          <div className="mt-16 text-center">
-            <div className="bg-violet-50 rounded-2xl p-12 max-w-2xl mx-auto">
-              <h2 className="text-3xl font-bold mb-4">
-                {locale === 'es' ? 'Más artículos próximamente' : 'More articles coming soon'}
-              </h2>
-              <p className="text-gray-600">
-                {locale === 'es'
-                  ? 'Estamos preparando contenido de calidad sobre desarrollo web, SEO y tecnología. ¡No te lo pierdas!'
-                  : "We're preparing quality content about web development, SEO and technology. Don't miss it!"}
-              </p>
-            </div>
           </div>
         </div>
       </section>
