@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
 import { z } from 'zod';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const contactSchema = z.object({
   name: z.string().min(2),
@@ -13,25 +16,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const data = contactSchema.parse(body);
 
-    // Log the contact form submission
-    console.log('New contact form submission:', {
-      name: data.name,
-      email: data.email,
-      phone: data.phone || 'Not provided',
-      message: data.message,
-      timestamp: new Date().toISOString(),
-    });
-
-    // TODO: Implement email sending with Resend or your preferred email service
-    // Example with Resend:
-    /*
-    const { Resend } = require('resend');
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
-    await resend.emails.send({
-      from: 'Nixi Contact <contacto@nixi.es>',
-      to: ['miguel@nixi.es'],
-      subject: `Nuevo mensaje de ${data.name}`,
+    const { error } = await resend.emails.send({
+      from: 'Nixi Contact <onboarding@resend.dev>',
+      to: [process.env.CONTACT_EMAIL!],
+      subject: `Nuevo mensaje de contacto de ${data.name}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
         <p><strong>Nombre:</strong> ${data.name}</p>
@@ -41,7 +29,10 @@ export async function POST(request: NextRequest) {
         <p>${data.message}</p>
       `,
     });
-    */
+
+    if (error) {
+      return NextResponse.json({ error: 'Error sending email' }, { status: 500 });
+    }
 
     return NextResponse.json(
       { success: true, message: 'Message sent successfully' },
