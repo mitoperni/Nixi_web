@@ -9,10 +9,14 @@ interface StarProps {
 }
 
 function Star({ mousePosition, containerRef }: StarProps) {
-  const [initialPos] = useState({
+  const [initialPos] = useState(() => ({
     top: `${Math.random() * 100}%`,
     left: `${Math.random() * 100}%`,
-  });
+    width: `${1 + Math.random() * 2}px`,
+    height: `${1 + Math.random() * 2}px`,
+    duration: 2 + Math.random() * 3,
+    delay: Math.random() * 5,
+  }));
 
   const springConfig = { stiffness: 100, damping: 15, mass: 0.1 };
   const springX = useSpring(0, springConfig);
@@ -61,17 +65,17 @@ function Star({ mousePosition, containerRef }: StarProps) {
       style={{
         top: initialPos.top,
         left: initialPos.left,
-        width: `${1 + Math.random() * 2}px`,
-        height: `${1 + Math.random() * 2}px`,
+        width: initialPos.width,
+        height: initialPos.height,
         x: springX,
         y: springY,
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: [0, 1, 0] }}
       transition={{
-        duration: 2 + Math.random() * 3,
+        duration: initialPos.duration,
         repeat: Infinity,
-        delay: Math.random() * 5,
+        delay: initialPos.delay,
       }}
     />
   );
@@ -89,7 +93,7 @@ export function InteractiveStarfield({
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setMounted(true); // eslint-disable-line
   }, []);
 
   if (!mounted) {
