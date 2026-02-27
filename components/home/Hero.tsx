@@ -11,15 +11,15 @@ export default function Hero() {
   return (
     <section className="min-h-[100vh] flex items-center justify-center py-20 px-6 bg-gradient-to-b from-violet-50 to-white items-center">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          className="text-center max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="inline-block mb-6">
+        <div className="text-center max-w-4xl mx-auto">
+          <motion.div
+            className="inline-block mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <Badge variant="primary">{t("badge")}</Badge>
-          </div>
+          </motion.div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
             {t("title.normal")}{" "}
@@ -45,15 +45,10 @@ export default function Hero() {
               {t("cta.secondary")}
             </Link>
           </div>
-        </motion.div>
+        </div>
 
         {/* Stats */}
-        <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-20"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-20">
           {["100%", "A+", "SEO", "24h"].map((stat, idx) => (
             <div key={idx} className="text-center">
               <div className="text-4xl font-bold gradient-text mb-2">
@@ -62,7 +57,7 @@ export default function Hero() {
               <div className="text-sm text-gray-600">{t(`stats.${idx}`)}</div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

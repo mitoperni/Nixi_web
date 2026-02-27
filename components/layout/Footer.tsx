@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" aria-label="Nixi Web Dev - Home" className="inline-block mb-4">
               <Logo variant="white" width={120} height={36} />
             </Link>
             <p className="text-gray-400 mb-4">{t("description")}</p>

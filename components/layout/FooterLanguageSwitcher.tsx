@@ -42,7 +42,6 @@ export default function FooterLanguageSwitcher() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-4 py-2 bg-gray-700/50 hover:bg-gray-700 text-gray-300 rounded-lg transition-all duration-200 border border-gray-600/50 hover:border-gray-500"
-        aria-label="Change language"
       >
         <span className="text-sm font-medium">{tLang('changeLanguage')}</span>
         <svg

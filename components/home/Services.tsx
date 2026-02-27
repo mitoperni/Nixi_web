@@ -7,7 +7,6 @@ export default function Services() {
   const t = useTranslations('Home.services');
   const locale = useLocale();
 
-  // Transform the translation data into the pricing component format
   const plans = [
     {
       name: t('packages.impulse.name'),

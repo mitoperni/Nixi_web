@@ -13,7 +13,7 @@ export default function Header() {
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center">
+          <Link href="/" aria-label="Nixi Web Dev - Home" className="flex items-center">
             <Logo width={120} height={36} />
           </Link>
 
